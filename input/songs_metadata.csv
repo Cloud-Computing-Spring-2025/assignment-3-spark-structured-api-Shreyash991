@@ -1,0 +1,101 @@
+song_id,title,artist,genre,mood
+1,Happy Song 1,Electric Pulse,Electronic,Happy
+2,Happy Song 2,Folk Tales,Metal,Happy
+3,Happy Song 3,The Melody Makers,Jazz,Happy
+4,Happy Song 4,R&B Soul,Electronic,Happy
+5,Happy Song 5,Jazz Ensemble,Pop,Happy
+6,Happy Song 6,Smooth Jazz,Classical,Happy
+7,Happy Song 7,Classical Symphony,Electronic,Happy
+8,Happy Song 8,Folk Tales,Folk,Happy
+9,Happy Song 9,Jazz Ensemble,Hip-Hop,Happy
+10,Happy Song 10,Acoustic Dreams,Electronic,Happy
+11,Happy Song 11,Metal Madness,R&B,Happy
+12,Happy Song 12,Classical Symphony,Country,Happy
+13,Happy Song 13,Hip-Hop Heroes,Metal,Happy
+14,Happy Song 14,R&B Soul,Folk,Happy
+15,Happy Song 15,Electric Pulse,Folk,Happy
+16,Happy Song 16,Electronic Waves,Metal,Happy
+17,Happy Song 17,Country Roads,Electronic,Happy
+18,Happy Song 18,Metal Madness,Folk,Happy
+19,Happy Song 19,R&B Soul,R&B,Happy
+20,Happy Song 20,The Melody Makers,Folk,Happy
+21,Sad Song 1,Folk Tales,Country,Sad
+22,Sad Song 2,The Melody Makers,R&B,Sad
+23,Sad Song 3,Electronic Waves,Rock,Sad
+24,Sad Song 4,Country Roads,Hip-Hop,Sad
+25,Sad Song 5,Acoustic Dreams,Country,Sad
+26,Sad Song 6,The Melody Makers,Hip-Hop,Sad
+27,Sad Song 7,Classical Symphony,R&B,Sad
+28,Sad Song 8,Smooth Jazz,Electronic,Sad
+29,Sad Song 9,Smooth Jazz,Hip-Hop,Sad
+30,Sad Song 10,Electronic Waves,Electronic,Sad
+31,Sad Song 11,Smooth Jazz,Classical,Sad
+32,Sad Song 12,Electric Pulse,Rock,Sad
+33,Sad Song 13,The Melody Makers,Folk,Sad
+34,Sad Song 14,Electronic Waves,Pop,Sad
+35,Sad Song 15,Jazz Ensemble,Hip-Hop,Sad
+36,Sad Song 16,Pop Sensation,Hip-Hop,Sad
+37,Sad Song 17,Folk Tales,Pop,Sad
+38,Sad Song 18,Urban Beats,Jazz,Sad
+39,Sad Song 19,Electronic Waves,Rock,Sad
+40,Sad Song 20,The Melody Makers,Rock,Sad
+41,Song 41,Acoustic Dreams,Jazz,Energetic
+42,Song 42,Electronic Waves,Folk,Happy
+43,Song 43,Jazz Ensemble,Electronic,Romantic
+44,Song 44,Pop Sensation,Folk,Chill
+45,Song 45,Rock Revolution,Country,Angry
+46,Song 46,Classical Symphony,Rock,Sad
+47,Song 47,Electric Pulse,Jazz,Energetic
+48,Song 48,Folk Tales,Pop,Energetic
+49,Song 49,Electronic Waves,Pop,Melancholic
+50,Song 50,Electronic Waves,Hip-Hop,Peaceful
+51,Song 51,Urban Beats,Metal,Chill
+52,Song 52,R&B Soul,Rock,Angry
+53,Song 53,Electric Pulse,Metal,Sad
+54,Song 54,Folk Tales,Hip-Hop,Sad
+55,Song 55,The Melody Makers,Classical,Romantic
+56,Song 56,Urban Beats,Metal,Melancholic
+57,Song 57,Pop Sensation,Pop,Chill
+58,Song 58,Smooth Jazz,Classical,Chill
+59,Song 59,Classical Symphony,Electronic,Chill
+60,Song 60,Electronic Waves,R&B,Chill
+61,Song 61,Pop Sensation,Pop,Angry
+62,Song 62,Acoustic Dreams,Rock,Melancholic
+63,Song 63,Smooth Jazz,R&B,Peaceful
+64,Song 64,R&B Soul,R&B,Chill
+65,Song 65,Electric Pulse,Classical,Romantic
+66,Song 66,Folk Tales,Rock,Melancholic
+67,Song 67,Electronic Waves,Pop,Melancholic
+68,Song 68,Country Roads,Jazz,Romantic
+69,Song 69,Urban Beats,Pop,Energetic
+70,Song 70,Acoustic Dreams,Classical,Sad
+71,Song 71,Classical Symphony,Pop,Peaceful
+72,Song 72,Pop Sensation,Classical,Melancholic
+73,Song 73,Urban Beats,Pop,Angry
+74,Song 74,Electric Pulse,Jazz,Angry
+75,Song 75,Pop Sensation,Hip-Hop,Energetic
+76,Song 76,Acoustic Dreams,Electronic,Peaceful
+77,Song 77,Metal Madness,Jazz,Peaceful
+78,Song 78,Classical Symphony,Hip-Hop,Sad
+79,Song 79,Country Roads,R&B,Melancholic
+80,Song 80,Electronic Waves,Country,Happy
+81,Song 81,Smooth Jazz,Jazz,Sad
+82,Song 82,Classical Symphony,Electronic,Sad
+83,Song 83,Smooth Jazz,R&B,Romantic
+84,Song 84,The Melody Makers,R&B,Peaceful
+85,Song 85,Smooth Jazz,R&B,Angry
+86,Song 86,Folk Tales,Pop,Happy
+87,Song 87,The Melody Makers,Folk,Happy
+88,Song 88,R&B Soul,Jazz,Melancholic
+89,Song 89,Electric Pulse,Country,Romantic
+90,Song 90,Metal Madness,Electronic,Romantic
+91,Song 91,Hip-Hop Heroes,R&B,Melancholic
+92,Song 92,Smooth Jazz,Pop,Melancholic
+93,Song 93,Electronic Waves,Folk,Melancholic
+94,Song 94,The Melody Makers,Pop,Melancholic
+95,Song 95,Hip-Hop Heroes,Country,Peaceful
+96,Song 96,R&B Soul,Country,Happy
+97,Song 97,Folk Tales,Folk,Melancholic
+98,Song 98,Smooth Jazz,Folk,Sad
+99,Song 99,Electronic Waves,Electronic,Romantic
+100,Song 100,The Melody Makers,Electronic,Sad
