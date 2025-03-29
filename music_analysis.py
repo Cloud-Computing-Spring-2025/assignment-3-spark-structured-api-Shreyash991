@@ -25,7 +25,7 @@ enriched_logs = logs_df.join(songs_df, "song_id")
 enriched_logs.createOrReplaceTempView("enriched_logs")
 
 # Save enriched logs
-enriched_logs.write.mode("overwrite").csv("output/enriched_logs/data")
+enriched_logs.write.mode("overwrite").option("header", "true").csv("output/enriched_logs/data")
 
 # Task 1: Find each user's favorite genre
 favorite_genres = enriched_logs.groupBy("user_id", "genre") \
@@ -36,7 +36,7 @@ favorite_genres = enriched_logs.groupBy("user_id", "genre") \
     .select("user_id", "genre", "play_count") \
     .orderBy("user_id")
 
-favorite_genres.write.mode("overwrite").csv("output/user_favorite_genres/data")
+favorite_genres.write.mode("overwrite").option("header", "true").csv("output/user_favorite_genres/data")
 
 # Task 2: Calculate the average listen time per song
 avg_listen_time = logs_df.groupBy("song_id") \
@@ -45,7 +45,7 @@ avg_listen_time = logs_df.groupBy("song_id") \
     .select("song_id", "title", "artist", "avg_duration_sec") \
     .orderBy(desc("avg_duration_sec"))
 
-avg_listen_time.write.mode("overwrite").csv("output/avg_listen_time_per_song/data")
+avg_listen_time.write.mode("overwrite").option("header", "true").csv("output/avg_listen_time_per_song/data")
 
 # Task 3: List the top 10 most played songs this week
 # Get the current date and start of the week
@@ -60,7 +60,7 @@ top_songs_this_week = enriched_logs \
     .orderBy(desc("plays")) \
     .limit(10)
 
-top_songs_this_week.write.mode("overwrite").csv("output/top_songs_this_week/data")
+top_songs_this_week.write.mode("overwrite").option("header", "true").csv("output/top_songs_this_week/data")
 
 # Task 4: Recommend "Happy" songs to users who mostly listen to "Sad" songs
 # First, find users who listen to "Sad" songs (lowering threshold to ensure we get recommendations)
@@ -116,7 +116,7 @@ if recommendations:
         happy_recommendations = happy_recommendations.union(recommendations[i])
     
     # Save only as CSV according to requirements
-    happy_recommendations.write.mode("overwrite").csv("output/happy_recommendations/data")
+    happy_recommendations.write.mode("overwrite").option("header", "true").csv("output/happy_recommendations/data")
     
     # Show all recommendations in the terminal for debugging
     print("\nAll Happy Song Recommendations:")
@@ -128,7 +128,7 @@ else:
         [], 
         "song_id INT, title STRING, artist STRING, user_id INT"
     )
-    empty_recommendations.write.mode("overwrite").csv("output/happy_recommendations/data")
+    empty_recommendations.write.mode("overwrite").option("header", "true").csv("output/happy_recommendations/data")
 
 # Task 5: Compute the genre loyalty score for each user
 # For each user, calculate proportion of plays in their top genre
@@ -159,7 +159,7 @@ loyalty_scores = all_loyalty_scores \
     .orderBy(desc("loyalty_score"))
 
 print(f"Found {loyalty_scores.count()} users with high genre loyalty (>0.6)")
-loyalty_scores.write.mode("overwrite").csv("output/genre_loyalty_scores/data")
+loyalty_scores.write.mode("overwrite").option("header", "true").csv("output/genre_loyalty_scores/data")
 
 # Task 6: Identify users who listen to music between 12 AM and 5 AM
 night_owl_users = logs_df \
@@ -170,7 +170,7 @@ night_owl_users = logs_df \
     .withColumnRenamed("count", "night_listens") \
     .orderBy(desc("night_listens"))
 
-night_owl_users.write.mode("overwrite").csv("output/night_owl_users/data")
+night_owl_users.write.mode("overwrite").option("header", "true").csv("output/night_owl_users/data")
 
 print("✅ Analysis complete! Results saved to /output/ directory.")
 spark.stop()
